@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ac850faf3397c531c80bca0b7ade0e0525a8f04714a915d4d54be519b44905fe
+  url: https://github.com/oulenz/fuzzy-rough-learn/archive/{{ version }}.tar.gz
+  sha256: b855506904f33e9e880d6cd8bff271af49439339ea0dc8a3fe5f2a8d06eb1f40
 
 build:
   number: 0
