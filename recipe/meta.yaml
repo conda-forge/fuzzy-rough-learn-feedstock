@@ -1,5 +1,5 @@
 {% set name = "fuzzy-rough-learn" %}
-{% set version = "0.0.0" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/oulenz/fuzzy-rough-learn/archive/{{ version }}.tar.gz
-  sha256: b855506904f33e9e880d6cd8bff271af49439339ea0dc8a3fe5f2a8d06eb1f40
+  sha256: 511cdea1bcb05903f49696c104fec8114402c57748f2a0e638e3e89d2df4812b
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -21,8 +21,8 @@ requirements:
   run:
     - python >=3.7.0
     - scipy >=1.1.0
-    - numpy >=1.15.0
-    - scikit-learn >=0.20.0
+    - numpy >=1.16.0
+    - scikit-learn >=0.22.0
 
 test:
   imports:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A package of tools for fuzzy rough machine learning.'
+  summary: A package of tools for fuzzy rough machine learning.
 
   description: |
     fuzzy-rough-learn is a package of scikit-learn extensions for fuzzy rough machine learning.
