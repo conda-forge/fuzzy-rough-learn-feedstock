@@ -1,5 +1,5 @@
 {% set name = "fuzzy-rough-learn" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/oulenz/fuzzy-rough-learn/archive/{{ version }}.tar.gz
-  sha256: 511cdea1bcb05903f49696c104fec8114402c57748f2a0e638e3e89d2df4812b
+  sha256: 2bcb58cbd8ff495a974ea5f34a982215b78e88bf010d075624f44c426de8f6ff
 
 build:
   number: 0
