@@ -1,5 +1,5 @@
 {% set name = "fuzzy-rough-learn" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/oulenz/fuzzy-rough-learn/archive/{{ version }}.tar.gz
-  sha256: 2bcb58cbd8ff495a974ea5f34a982215b78e88bf010d075624f44c426de8f6ff
+  sha256: 3d4a4f6c40d905ece7e0ff6a460489166bdf4f50bf88bdaa64fefdb6cf999f90
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - python >=3.7.0
     - scipy >=1.1.0
     - numpy >=1.17.0
-    - scikit-learn >=0.22.0
+    - scikit-learn >=0.24.0
 
 test:
   imports:
